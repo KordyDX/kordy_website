@@ -1,45 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: azure;
+    background-image: url("./pictures/bkg3v.jpg");
     font-family: 'Varela Round', sans-serif;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 a:link {
-  color: rgb(0, 0, 0);
-  background-color: transparent;
-  text-decoration: none;
+    color: azure;
+    background-color: transparent;
+    text-decoration: none;
 }
-a:visited {
-  color: rgb(0, 0, 0);
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color:rgb(255, 255, 255);
-  background-color: transparent;
-  text-decoration: none;
-}
-a:active {
-  color: rgb(0, 0, 0);
-  background-color: transparent;
-  text-decoration: none;
-}  
-p {text-align:center; font-size: 24px;}
-h1 {text-align:center}
 
-.odkazy img{margin: 8px;}
-.odkazy {margin-top: 65px;}
+a:visited {
+    color: azure;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(166, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: rgb(0, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.about {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.about h1 span {
+    padding: 0px 5px 0px 5px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.about p {
+    margin-top: 10px;
+}
+
+.about p span {
+    padding: 0px 5px 0px 5px;
+    margin-top: 10px;
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+}
+
+.odkazy img {
+    margin: 8px;
+}
+
+.odkazy {
+    display: flex;
+    color: azure;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.topbar p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
